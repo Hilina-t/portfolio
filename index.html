@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hilina Workneh | Backend Software Engineer</title>
+  <meta name="description" content="Hilina Workneh, backend software engineer in Dallas, TX. Distributed services in Go and Python, cloud storage platforms, and identity systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script>
+    (function () {
+      var saved = localStorage.getItem("theme");
+      var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = dark ? "dark" : "light";
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+</head>
+<body id="top">
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top"><span class="badge">HW</span><span>Hilina Workneh</span></a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#resume">Resume</a>
+        <a class="pill" href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="reveal">
+          <p class="eyebrow"><span class="dot"></span>Backend software engineer · Dallas, TX</p>
+          <h1>Hilina<br />Workneh</h1>
+          <p class="tagline">Distributed services, cloud storage platforms, and identity systems.</p>
+          <p class="intro">Backend software engineer with 5+ years building production services in Go and Python at NetApp. I am currently building the Azure NetApp Files Virtual Storage Appliance, and before that delivered the first BlueXP Data Lake service and an enterprise identity federation service.</p>
+          <div class="actions">
+            <a class="btn btn-solid" href="assets/Hilina_Workneh_Resume.pdf" target="_blank" rel="noopener">View resume <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="#experience">See experience</a>
+          </div>
+          <div class="links">
+            <a href="https://linkedin.com/in/hilina-workneh-09349a17b/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="mailto:hilut.t21@gmail.com">Email ↗</a>
+          </div>
+        </div>
+
+        <aside class="stat-card reveal" aria-label="Highlights">
+          <div class="stat-head">
+            <span class="label">Open to roles</span>
+            <span>Backend / Distributed systems</span>
+          </div>
+          <div class="stat-grid">
+            <div><strong>5+</strong><span>years building production backend services</span></div>
+            <div><strong>PB</strong><span>scale storage footprint expected on the Azure VSA platform</span></div>
+            <div><strong class="word">Cloud storage</strong><span>Azure NetApp Files, ONTAP, high availability</span></div>
+            <div><strong class="word">Data &amp; identity</strong><span>ClickHouse data lake, SAML / OIDC federation</span></div>
+          </div>
+          <div class="chips">
+            <span>Go</span><span>Python</span><span>Azure</span><span>Kubernetes</span><span>ClickHouse</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="wrap now-strip reveal">
+        <div><span class="label">Now</span>Software Engineer III · NetApp</div>
+        <div><span class="label">Building</span>Azure NetApp Files VSA</div>
+        <div><span class="label">Education</span>M.S. Electrical Engineering · NC A&amp;T</div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Five years of production backend work</h2>
+          <p>One role at NetApp across cloud storage, data platforms, identity, and analytics.</p>
+        </div>
+
+        <article class="job reveal">
+          <div class="job-meta">
+            <span>NOV 2021 to PRESENT</span>
+            <span>Dallas, TX</span>
+          </div>
+          <h3 class="org">NetApp Inc</h3>
+          <p class="role">Software Engineer III</p>
+
+          <div class="track">
+            <h4>Azure NetApp Files: Virtual Storage Appliance <span class="tag-now">Current</span></h4>
+            <ul>
+              <li>Building the Virtual Storage Appliance (VSA) platform that runs NetApp ONTAP on Azure virtual machines, moving Azure NetApp Files off dedicated bare-metal hardware onto elastic, software-defined infrastructure.</li>
+              <li>The platform is expected to carry a petabyte-scale storage footprint, letting Azure NetApp Files add capacity and regions in software instead of waiting on new hardware installs.</li>
+              <li>Develop the deployment, networking, and high-availability workflows that keep customer data available when a node fails over, working directly with Microsoft engineering.</li>
+            </ul>
+          </div>
+
+          <div class="track">
+            <h4>BlueXP platform services</h4>
+            <ul>
+              <li>Delivered NetApp's first BlueXP Data Lake service, with high-throughput ingest and parallel query APIs on distributed ClickHouse. Earned a Spot Award for impact and execution.</li>
+              <li>Built the Enterprise Federation service connecting SAML, ADFS, and Azure AD identity providers through OIDC and OAuth2, with automated signing-certificate expiry alerts.</li>
+              <li>Implemented RBAC and IAM access control and domain APIs for creation, validation, and ownership verification, and led the tenancy and authorization migration from MySQL to MongoDB.</li>
+              <li>Train and mentor new hires through onboarding, code review, and pairing on production services.</li>
+            </ul>
+          </div>
+
+          <div class="track">
+            <h4>Capacity forecasting and analytics</h4>
+            <ul>
+              <li>Built the "days to full" forecasting algorithm that predicts when customer storage runs out, presented it to engineering leadership, and applied machine learning to manageability telemetry. Earned a Spot Award.</li>
+            </ul>
+          </div>
+
+          <div class="chips">
+            <span>Go</span><span>Python</span><span>Azure</span><span>NetApp ONTAP</span><span>ClickHouse</span><span>MongoDB</span><span>OIDC / SAML</span><span>Kubernetes</span><span>Docker</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Systems I have built</h2>
+          <p>Platform work at NetApp and a startup I am building on my own time.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project feature reveal">
+            <span class="kicker">01 / CLOUD STORAGE PLATFORM</span>
+            <h3>Azure NetApp Files Virtual Storage Appliance</h3>
+            <p>Software-defined ONTAP on Azure virtual machines, replacing dedicated bare-metal storage.</p>
+            <ul>
+              <li>Expected to serve a petabyte-scale storage footprint.</li>
+              <li>Deployment, networking, and high-availability failover workflows.</li>
+              <li>Built in partnership with Microsoft engineering.</li>
+            </ul>
+          </article>
+
+          <article class="project reveal">
+            <span class="kicker">02 / DATA PLATFORM</span>
+            <h3>BlueXP Data Lake Service</h3>
+            <p>NetApp's first BlueXP Data Lake service: high-throughput ingest and parallel query APIs on distributed ClickHouse. Spot Award, January 2024.</p>
+          </article>
+
+          <article class="project reveal">
+            <span class="kicker">03 / IDENTITY</span>
+            <h3>Enterprise Federation Service</h3>
+            <p>Connects SAML, ADFS, and Azure AD identity providers through OIDC and OAuth2, with automated alerts before signing certificates expire.</p>
+          </article>
+
+          <article class="project reveal">
+            <span class="kicker">04 / STARTUP</span>
+            <h3>MahberHub (IdirHub)</h3>
+            <p>A mobile-first platform that digitizes Idir and Mahber community groups, replacing paper ledgers and cash collection with transparent membership, contribution, and announcement tools.</p>
+            <ul>
+              <li>Go and PostgreSQL backend with 30+ REST endpoints.</li>
+              <li>JWT login and Twilio phone verification.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="section">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>What I can contribute</h2>
+          <p>The technical areas behind the work above.</p>
+        </div>
+        <div class="expertise-grid">
+          <article class="skill reveal"><span class="num">01</span><h3>Backend &amp; APIs</h3><p>Go, Python, Java, TypeScript, REST and OpenAPI design, Gin, concurrency, microservices.</p></article>
+          <article class="skill reveal"><span class="num">02</span><h3>Cloud &amp; Infrastructure</h3><p>Azure (VNet, load balancer, ARM, Entra ID), Kubernetes, Docker, NetApp ONTAP, NFS, high availability.</p></article>
+          <article class="skill reveal"><span class="num">03</span><h3>Data</h3><p>ClickHouse, PostgreSQL, MongoDB, MySQL, Kafka, data migration, forecasting models.</p></article>
+          <article class="skill reveal"><span class="num">04</span><h3>Identity &amp; Operations</h3><p>OIDC, OAuth2, SAML, ADFS, RBAC/IAM, JWT, CI/CD, Elasticsearch, Kibana, Prometheus, Grafana.</p></article>
+        </div>
+
+        <div class="edu-row reveal">
+          <div><span class="label">Education</span><strong>M.S. Electrical Engineering</strong><span>North Carolina A&amp;T State University · GPA 3.80/4.00</span></div>
+          <div><span class="label">Foundation</span><strong>B.S. Electrical &amp; Computer Engineering</strong><span>Addis Ababa Science and Technology University · GPA 3.25/4.00</span></div>
+          <div><span class="label">Recognition</span><strong>NetApp Spot Award (2x)</strong><span>BlueXP Data Lake, 2024 · Days-to-full forecasting, 2022</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section alt">
+      <div class="wrap cta reveal">
+        <div>
+          <h2>View my resume</h2>
+          <p>One page covering cloud storage, data platforms, identity services, and my startup work.</p>
+        </div>
+        <a class="btn btn-solid" href="assets/Hilina_Workneh_Resume.pdf" target="_blank" rel="noopener">Open resume <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap cta reveal">
+        <div>
+          <h2>Let's work together</h2>
+          <p>I am looking for backend roles in Dallas, TX where high-volume, distributed systems matter.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-solid" href="mailto:hilut.t21@gmail.com">Email me</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/hilina-workneh-09349a17b/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">© <span id="year">2026</span> Hilina Workneh · Dallas, TX</div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
